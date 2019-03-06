@@ -347,38 +347,32 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/02/25/如何在github上利用hexo搭建个人博客/">
+        <a class="abstract-title" href="/2019/03/06/mysql主从同步/">
             
-                <span>如何在github上利用hexo搭建个人博客</span>
+                <span>MySQL主从同步</span>
         </a>
         <div class="abstract-content">
-             介绍
-github有一个GitHub Pages可以给githuber用来建立自己的个人主页，我们就是利用这个来借由hexo搭建博客，并把生成的静态文件发布到自己的GitHub Pages上，这样就可以简单的实现在GitHub上搭建个人博客的目的。
- github上的准备
-首先需要一个github账号，没什么好说的，输入用户名，输入常用的邮箱地址和密码注册成功后，点击右上角的加号，点击New repository创建新仓库
-
-在仓库名中填自己github的用户名.github.io因为你的GitHub Pages的链接就是这个，记得项目一定要是公开状态，否则在吧项目设置为GitHub ...
+            几个月前因为项目需要，我研究了一下MySQL的主从同步，当时因为版本问题还有网络问题费了我好大的劲。但当时由于没有开始写博客，所以就没有写博客，好在我仍然吧主要的一些东西记录下来了，所以能写这篇博客，只可惜当时没有截图，所以也就只能靠文字记录下这篇博客。
+ 准备
+ 关于网络
+首先确定两台服务器可以互相访问，以及从服务器（slave）可以远程连接主服务器（master）。如果master在内网，无外网ip，则需要把master的MySQL端口映射到外网ip上，最简单的方式就是防火墙穿透。
+ 关于MySQL
+确认主从服务器MySQL的版本是否相同，如果不同，而且master的版本高于等于5....
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/25</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/06</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="hexo">hexo</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="mysql">mysql</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="blog">blog</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="主从同步">主从同步</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="git">git</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="ssh">ssh</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="github">github</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="ssh密钥">ssh密钥</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="MySQL">MySQL</a>
     
 </div>
             
