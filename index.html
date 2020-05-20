@@ -360,6 +360,155 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2020/05/20/纯css实现底部固定/">
+            
+                <span>纯css实现底部固定</span>
+        </a>
+        <div class="abstract-content">
+            在做WebApp的时候时常会遇到需要实现某个按钮或者版权信息如果除去主体内容外有空余时固定在底部，否则自适应滚动的需求，于是我就用flex实现了一下，因为虽然每次都要用，但一个项目通常只用一两次，防止忘记，于是记录一下，主要是思路，实现其实根据需求和场景有不同的解决办法。先上一个效果预览：
+
+Html代码：
+12345678910&lt;div class="main-div"&gt;  &lt;div class="content-box"&gt;    主体内容  &lt;/div&gt;  &lt;div class="bottom-box"&gt;    &lt;div clas...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/20</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="css">css</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="flex">flex</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="WebApp">WebApp</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2020/05/12/es6下的数组去重算法/">
+            
+                <span>es6下的数组去重算法</span>
+        </a>
+        <div class="abstract-content">
+             1.非常简单的一种方法
+12345678function unique1(array)&#123;  var temp = []; //一个新的临时数组  for(var i = 0; i &lt; array.length; i++)&#123; //遍历原始数组    //每次循环都判断数组中是否存在元素，不存在就插入临时数组    if (temp.indexOf(array[i]) == -1) temp.push(array[i]);  &#125;  return temp;&#125;
+ 2.空间换时间
+1234567891011121314function unique...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="es6">es6</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="数组">数组</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="去重">去重</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2020/04/22/vue Slot的一些总结/">
+            
+                <span>vue Slot的一些总结</span>
+        </a>
+        <div class="abstract-content">
+            最近在开发的一个项目中由于需求变化，我原来写的一个简单的表格组件满足不了需求，于是打算用vue的插槽solt来实现需求，之前的使用我都只是用了非常简单的特性，这次终于可以用上slot的插槽prop这个特性。
+原理上很简单，在子组件的插槽上定义一个属性，然后在父级的插槽位置获取slot的这个属性，就实现了父级插槽使用子组件拥有的数据这个目的。
+这是父级位置的代码
+12345678910&lt;x-table  :cellData="cellData"  :data="tableData"&gt;  &lt;template #contrast="&#123; cellValue &#125...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/22</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="slot">slot</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/10/29/vue-cli3的使用小结/">
+            
+                <span>vue-cli3的使用小结</span>
+        </a>
+        <div class="abstract-content">
+             安装环境
+vue-cli3需要Node.js 8.9或更高版本(推荐8.11.0以上)。用node -v可以查看查看安装的版本。
+用以下任意一个指令安装vue-cli3
+123npm install -g @vue/cli# ORyarn global add @vue/cli
+安装完成后可以使用vue --version验证是否安装正确
+ 使用脚手架新建项目
+打开终端或者命令行进入需要创建项目的目录，然后执行指令vue create my-app，my-app是你的项目名。然后就会显示出两个选项可以选择，如图：
+
+第一个默认配置，第二个是自定义配置。默认配置如图：
+
+以下是配置的说明...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/29</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="vue-cli3">vue-cli3</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="vue脚手架">vue脚手架</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/25/利用VSCode搭建Go开发环境/">
             
                 <span>利用VSCode搭建Go开发环境</span>
@@ -610,7 +759,7 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
             
                 
                     <span>
-                        <a href="https://umi.app/" target="_black">松鼠乐园</a>
+                        <a href="https://www.squirrelzoo.com" target="_black">松鼠乐园</a>
                     </span>
                 
             
@@ -708,9 +857,49 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 9
         </div>
         <!-- search  -->
         
@@ -721,8 +910,37 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
     
     
     
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/20</span><a class="archive-post-title" href="/2020/05/20/纯css实现底部固定/">纯css实现底部固定</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href="/2020/05/12/es6下的数组去重算法/">es6下的数组去重算法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href="/2020/04/22/vue Slot的一些总结/">vue Slot的一些总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/29</span><a class="archive-post-title" href="/2019/10/29/vue-cli3的使用小结/">vue-cli3的使用小结</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -754,6 +972,20 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="es6"><span class="iconfont-archer">&#xe606;</span>es6</span>
+    
+        <span class="sidebar-tag-name" data-tags="数组"><span class="iconfont-archer">&#xe606;</span>数组</span>
+    
+        <span class="sidebar-tag-name" data-tags="去重"><span class="iconfont-archer">&#xe606;</span>去重</span>
+    
+        <span class="sidebar-tag-name" data-tags="Vue"><span class="iconfont-archer">&#xe606;</span>Vue</span>
+    
+        <span class="sidebar-tag-name" data-tags="vue-cli3"><span class="iconfont-archer">&#xe606;</span>vue-cli3</span>
+    
+        <span class="sidebar-tag-name" data-tags="vue脚手架"><span class="iconfont-archer">&#xe606;</span>vue脚手架</span>
+    
+        <span class="sidebar-tag-name" data-tags="slot"><span class="iconfont-archer">&#xe606;</span>slot</span>
+    
         <span class="sidebar-tag-name" data-tags="Go"><span class="iconfont-archer">&#xe606;</span>Go</span>
     
         <span class="sidebar-tag-name" data-tags="VSCode"><span class="iconfont-archer">&#xe606;</span>VSCode</span>
@@ -761,6 +993,18 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
         <span class="sidebar-tag-name" data-tags="Golang"><span class="iconfont-archer">&#xe606;</span>Golang</span>
     
         <span class="sidebar-tag-name" data-tags="环境搭建"><span class="iconfont-archer">&#xe606;</span>环境搭建</span>
+    
+        <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
+    
+        <span class="sidebar-tag-name" data-tags="flex"><span class="iconfont-archer">&#xe606;</span>flex</span>
+    
+        <span class="sidebar-tag-name" data-tags="WebApp"><span class="iconfont-archer">&#xe606;</span>WebApp</span>
+    
+        <span class="sidebar-tag-name" data-tags="mysql"><span class="iconfont-archer">&#xe606;</span>mysql</span>
+    
+        <span class="sidebar-tag-name" data-tags="主从同步"><span class="iconfont-archer">&#xe606;</span>主从同步</span>
+    
+        <span class="sidebar-tag-name" data-tags="MySQL"><span class="iconfont-archer">&#xe606;</span>MySQL</span>
     
         <span class="sidebar-tag-name" data-tags="geojson"><span class="iconfont-archer">&#xe606;</span>geojson</span>
     
@@ -779,12 +1023,6 @@ github有一个GitHub Pages可以给githuber用来建立自己的个人主页，
         <span class="sidebar-tag-name" data-tags="vue的set方法"><span class="iconfont-archer">&#xe606;</span>vue的set方法</span>
     
         <span class="sidebar-tag-name" data-tags="vue计算属性"><span class="iconfont-archer">&#xe606;</span>vue计算属性</span>
-    
-        <span class="sidebar-tag-name" data-tags="mysql"><span class="iconfont-archer">&#xe606;</span>mysql</span>
-    
-        <span class="sidebar-tag-name" data-tags="主从同步"><span class="iconfont-archer">&#xe606;</span>主从同步</span>
-    
-        <span class="sidebar-tag-name" data-tags="MySQL"><span class="iconfont-archer">&#xe606;</span>MySQL</span>
     
         <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
@@ -833,11 +1071,11 @@ jsonContent:
     
         <span class="sidebar-category-name" data-categories="极客"><span class="iconfont-archer">&#xe60a;</span>极客</span>
     
-        <span class="sidebar-category-name" data-categories="geojson"><span class="iconfont-archer">&#xe60a;</span>极客/geojson</span>
-    
         <span class="sidebar-category-name" data-categories="vue"><span class="iconfont-archer">&#xe60a;</span>极客/vue</span>
     
         <span class="sidebar-category-name" data-categories="MySQL"><span class="iconfont-archer">&#xe60a;</span>极客/MySQL</span>
+    
+        <span class="sidebar-category-name" data-categories="geojson"><span class="iconfont-archer">&#xe60a;</span>极客/geojson</span>
     
         <span class="sidebar-category-name" data-categories="Hexo"><span class="iconfont-archer">&#xe60a;</span>极客/Hexo</span>
     
